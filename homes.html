@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Quiz Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column; /* Ensure items stack vertically */
+            align-items: flex-start; /* Align items to the left */
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+            background-image: url('quiz_background.JPEG');
+            background-size: cover;
+            background-position: center;
+            animation: animateBackground 20s ease-in-out infinite;
+        }
+
+        h1 {
+            text-align: left; /* Align text to the left */
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            font-size: 3rem;
+            margin-left: 20px; /* Add left margin */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Change font */
+        }
+
+        .bottom-buttons {
+            margin-top: 20px; /* Adjust as needed */
+            margin-left: 20px; /* Add left margin */
+        }
+
+        .bottom-buttons ul {
+            display: flex; /* Align buttons side by side */
+            flex-direction: row; /* Ensure buttons are in a row */
+            gap: 10px; /* Space between buttons */
+        }
+
+        .bottom-buttons ul li {
+            list-style: none; /* Remove list bullets */
+        }
+
+        .bottom-buttons ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            background-color: #1a237e; /* Dark blue background color */
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            display: block; /* Ensure full width for block-level display */
+        }
+
+        .bottom-buttons ul li a:hover {
+            background-color: #283593; /* Darker shade on hover */
+        }
+
+        @keyframes animateBackground {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Quiz Application</h1>
+    
+    <!-- Sign Up and Sign In buttons below the "Welcome" statement -->
+    <div class="bottom-buttons">
+        <ul>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="signin.html">Sign In</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>

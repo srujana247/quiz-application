@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up Success</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #1e3a5f; /* Dark blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 300px;
+    text-align: center;
+    color: #1e3a5f; /* Dark blue text */
+    animation: fadeIn 0.5s ease-out; /* Animation */
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+
+  .message {
+    margin: 20px 0;
+    font-size: 18px;
+  }
+
+  .signin-link {
+    color: #1e3a5f;
+    text-decoration: none;
+    margin-top: 10px;
+    display: block;
+  }
+
+  .signin-link:hover {
+    text-decoration: underline;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h2>Sign Up Successful!</h2>
+  <div class="message">
+    Your account has been created successfully. Please sign in to continue.
+  </div>
+  <a href="signin.html" class="signin-link">Go to Sign In</a>
+</div>
+</body>
+</html>
